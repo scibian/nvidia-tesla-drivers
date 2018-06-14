@@ -1,4 +1,4 @@
-nvidia-tesla-drivers (396.26-0sci8u1~dev1) UNRELEASED; urgency=medium
+nvidia-tesla-drivers (396.26-0sci8+tl396u1) scibian8+tl396; urgency=medium
 
   * Initial package
 
