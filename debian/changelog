@@ -1,3 +1,10 @@
+nvidia-tesla-drivers (396.26-0sci9+tl396u1) scibian9+tl396; urgency=medium
+
+  * Rebuild for scibian9+tl396
+  * Remove packaging modifications specific to Jessie backport
+
+ -- Rémi Palancher <remi-externe.palancher@edf.fr>  Thu, 14 Jun 2018 11:32:10 +0200
+
 nvidia-tesla-drivers (396.26-0sci8+tl396u1) scibian8+tl396; urgency=medium
 
   * Initial package
