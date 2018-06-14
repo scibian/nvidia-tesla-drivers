@@ -956,7 +956,7 @@ Section: non-free/kernel
 Architecture: amd64
 Depends:
  debhelper (>= 9),
- make,
+ make:any,
  quilt,
  xz-utils,
  ${misc:Depends}
