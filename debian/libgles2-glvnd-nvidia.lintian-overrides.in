@@ -7,8 +7,9 @@ hardening-no-stackprotector
 
 # Packages built against the NVIDIA libGLES should declare dependencies on
 # the free version for Debian's purposes.
-symbols-declares-dependency-on-other-package libgles2xxx (*)
+symbols-declares-dependency-on-other-package libgles2 (*)
 symbols-declares-dependency-on-other-package libgles2-mesa
+symbols-file-missing-build-depends-package-field
 
 # Do not conflict with the virtual package from src:mesa (<< 17).
 conflicts-with-version libgles2 (>> 0)
