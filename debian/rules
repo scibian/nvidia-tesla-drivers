@@ -203,15 +203,10 @@ override_dh_clean:
 	dh_clean
 	$(RM) $(AUTOCLEAN)
 	$(MAKE) -f debian/rules $(AUTOKEEP)
-# this will fail unless debian/control{,.md5sum} is up-to-date
-	md5sum --check debian/control.md5sum --status || \
-		$(MAKE) -f debian/rules debian/control-real
 
 CONTROL_FILES	 = debian/control.in debian/gen-control.pl debian/rules debian/rules.defs
 
 debian/control: $(CONTROL_FILES) debian/changelog
-	md5sum --check debian/control.md5sum --status || \
-		$(MAKE) -f debian/rules debian/control-real
 	touch $@
 
 override_dh_auto_configure: prepare
@@ -371,7 +366,7 @@ override_dh_strip_nondeterminism:
 	< $< > $@
 
 debian/module/debian/changelog: debian/changelog
-	sed '1s/^nvidia-graphics-drivers$(legacy)/$(nvidia)-kernel/g' $< > $@
+	sed '1s/^nvidia-tesla-drivers$(legacy)/$(nvidia)-kernel/g' $< > $@
 
 
 # Renaming control files for legacy packaging
