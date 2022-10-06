@@ -30,8 +30,8 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glBeginQueryIndexed@Base 346
  _glBeginTransformFeedback@Base 346
  _glBeginTransformFeedbackNV@Base 346
- _glBeginVideoCaptureNV@Base 346
- _glBindANCCaptureStreamBufferNVX@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glBeginVideoCaptureNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glBindANCCaptureStreamBufferNVX@Base 346
  _glBindAttribLocation@Base 346
  _glBindAttribLocationARB@Base 346
  _glBindBuffer@Base 346
@@ -75,8 +75,8 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glBindVertexArrayOES@Base 346
  _glBindVertexBuffer@Base 346
  _glBindVertexBuffers@Base 346
- _glBindVideoCaptureStreamBufferNV@Base 346
- _glBindVideoCaptureStreamTextureNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glBindVideoCaptureStreamBufferNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glBindVideoCaptureStreamTextureNV@Base 346
  _glBitmap@Base 346
  _glBlendBarrier@Base 358
  _glBlendBarrierKHR@Base 346
@@ -117,6 +117,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glBufferDataARB@Base 346
  _glBufferDataSysmem@Base 346
  _glBufferPageCommitmentARB@Base 346
+ _glBufferPageCommitmentMemNV@Base 470.103.01-0sci9+tl470u1
  _glBufferStorage@Base 346
  _glBufferStorageEXT@Base 349
  _glBufferStorageMemEXT@Base 384.69
@@ -329,6 +330,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glCreateQueries@Base 346
  _glCreateRenderbuffers@Base 346
  _glCreateSamplers@Base 346
+ _glCreateSemaphoresNV@Base 470.103.01-0sci9+tl470u1
  _glCreateShader@Base 346
  _glCreateShaderObjectARB@Base 346
  _glCreateShaderProgramEXT@Base 346
@@ -525,7 +527,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glEndQueryIndexed@Base 346
  _glEndTransformFeedback@Base 346
  _glEndTransformFeedbackNV@Base 346
- _glEndVideoCaptureNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glEndVideoCaptureNV@Base 346
  _glEvalCoord1d@Base 346
  _glEvalCoord1dv@Base 346
  _glEvalCoord1f@Base 346
@@ -893,6 +895,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glGetSamplerParameterIuivOES@Base 349
  _glGetSamplerParameterfv@Base 346
  _glGetSamplerParameteriv@Base 346
+ _glGetSemaphoreParameterivNV@Base 470.103.01-0sci9+tl470u1
  _glGetSemaphoreParameterui64vEXT@Base 384.69
  _glGetSeparableFilter@Base 346
  _glGetShaderInfoLog@Base 346
@@ -933,6 +936,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glGetTexParameterfv@Base 346
  _glGetTexParameteriv@Base 346
  _glGetTexParameterxv@Base 346
+ _glGetTextureDirtyTileMapNV@Base 470.103.01-0sci9+tl470u1
  _glGetTextureHandleARB@Base 346
  _glGetTextureHandleNV@Base 346
  _glGetTextureImage@Base 346
@@ -1007,15 +1011,15 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glGetVertexAttribiv@Base 346
  _glGetVertexAttribivARB@Base 346
  _glGetVertexAttribivNV@Base 346
- _glGetVideoCaptureANCStreamivNVX@Base 346
- _glGetVideoCaptureStreamdvNV@Base 346
- _glGetVideoCaptureStreamfvNV@Base 346
- _glGetVideoCaptureStreamivNV@Base 346
- _glGetVideoCaptureivNV@Base 346
- _glGetVideoi64vNV@Base 346
- _glGetVideoivNV@Base 346
- _glGetVideoui64vNV@Base 346
- _glGetVideouivNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glGetVideoCaptureANCStreamivNVX@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glGetVideoCaptureStreamdvNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glGetVideoCaptureStreamfvNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glGetVideoCaptureStreamivNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glGetVideoCaptureivNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glGetVideoi64vNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glGetVideoivNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glGetVideoui64vNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glGetVideouivNV@Base 346
 #MISSING: 410# _glGetVkCoreProcAddrNVX@Base 381
  _glGetVkProcAddrNV@Base 364
  _glGetnColorTable@Base 346
@@ -1393,10 +1397,23 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glMultiTexSubImage1DEXT@Base 346
  _glMultiTexSubImage2DEXT@Base 346
  _glMultiTexSubImage3DEXT@Base 346
+ _glMulticastBarrierNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastBlitFramebufferNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastBufferSubDataNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastCopyBufferSubDataNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastCopyImageSubDataNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastFramebufferSampleLocationsfvNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastGetQueryObjecti64vNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastGetQueryObjectivNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastGetQueryObjectui64vNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastGetQueryObjectuivNV@Base 470.103.01-0sci9+tl470u1
+ _glMulticastWaitSyncNV@Base 470.103.01-0sci9+tl470u1
  _glNamedBufferAttachMemoryNV@Base 415
  _glNamedBufferData@Base 346
  _glNamedBufferDataEXT@Base 346
+ _glNamedBufferPageCommitmentARB@Base 470.103.01-0sci9+tl470u1
  _glNamedBufferPageCommitmentEXT@Base 346
+ _glNamedBufferPageCommitmentMemNV@Base 470.103.01-0sci9+tl470u1
  _glNamedBufferStorage@Base 346
  _glNamedBufferStorageEXT@Base 346
  _glNamedBufferStorageMemEXT@Base 384.69
@@ -1538,8 +1555,8 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glPopDebugGroupOES@Base 346
  _glPopMatrix@Base 346
  _glPopName@Base 346
- _glPresentFrameDualFillNV@Base 346
- _glPresentFrameKeyedNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glPresentFrameDualFillNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glPresentFrameKeyedNV@Base 346
  _glPrimitiveBoundingBox@Base 358
  _glPrimitiveBoundingBoxARB@Base 358
  _glPrimitiveBoundingBoxEXT@Base 346
@@ -1789,6 +1806,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glRects@Base 346
  _glRectsv@Base 346
  _glReleaseShaderCompiler@Base 346
+ _glRenderGpuMaskNV@Base 470.103.01-0sci9+tl470u1
  _glRenderMode@Base 346
  _glRenderbufferStorage@Base 346
  _glRenderbufferStorageEXT@Base 346
@@ -1878,6 +1896,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glSecondaryColorPointer@Base 346
  _glSecondaryColorPointerEXT@Base 346
  _glSelectBuffer@Base 346
+ _glSemaphoreParameterivNV@Base 470.103.01-0sci9+tl470u1
  _glSemaphoreParameterui64vEXT@Base 384.69
  _glSeparableFilter2D@Base 346
  _glSetFenceNV@Base 346
@@ -2001,6 +2020,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glTexImage3DNV@Base 346
  _glTexPageCommitmentARB@Base 346
  _glTexPageCommitmentEXT@Base 349
+ _glTexPageCommitmentMemNV@Base 470.103.01-0sci9+tl470u1
  _glTexParameterIiv@Base 346
  _glTexParameterIivEXT@Base 346
  _glTexParameterIivOES@Base 349
@@ -2049,6 +2069,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glTextureImage3DMultisampleCoverageNV@Base 346
  _glTextureImage3DMultisampleNV@Base 346
  _glTexturePageCommitmentEXT@Base 346
+ _glTexturePageCommitmentMemNV@Base 470.103.01-0sci9+tl470u1
  _glTextureParameterIiv@Base 346
  _glTextureParameterIivEXT@Base 346
  _glTextureParameterIuiv@Base 346
@@ -2232,7 +2253,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glUseProgramStages@Base 346
  _glUseProgramStagesEXT@Base 346
  _glUseShaderProgramEXT@Base 346
- _glValidBackBufferHintAutodesk@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glValidBackBufferHintAutodesk@Base 346
  _glValidateProgram@Base 346
  _glValidateProgramARB@Base 346
  _glValidateProgramPipeline@Base 346
@@ -2527,10 +2548,10 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glVertexP4uiv@Base 346
  _glVertexPointer@Base 346
  _glVertexPointerEXT@Base 346
- _glVideoCaptureNV@Base 346
- _glVideoCaptureStreamParameterdvNV@Base 346
- _glVideoCaptureStreamParameterfvNV@Base 346
- _glVideoCaptureStreamParameterivNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glVideoCaptureNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glVideoCaptureStreamParameterdvNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glVideoCaptureStreamParameterfvNV@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glVideoCaptureStreamParameterivNV@Base 346
  _glViewport@Base 346
  _glViewportArrayv@Base 346
  _glViewportArrayvNV@Base 346
@@ -2550,7 +2571,7 @@ libnvidia-eglcore.so.#VERSION# #PACKAGE# #MINVER#
  _glWaitVkSemaphoreNV@Base 364
  _glWeightPathsNV@Base 346
  _glWeightPointerOES@Base 349
- _glWindowBackBufferHintAutodesk@Base 346
+#MISSING: 470.103.01-0sci9+tl470u1# _glWindowBackBufferHintAutodesk@Base 346
  _glWindowPos2d@Base 346
  _glWindowPos2dARB@Base 346
  _glWindowPos2dv@Base 346

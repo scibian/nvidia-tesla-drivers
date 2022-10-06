@@ -9,3 +9,8 @@ libnvidia-glvkspirv.so.#VERSION# #PACKAGE# #MINVER#
  _nv006nvvm@Base 396
  _nv007nvvm@Base 396
  _nv008nvvm@Base 410
+ _nv009nvvm@Base 470.103.01-0sci9+tl470u1
+ _nv010nvvm@Base 470.103.01-0sci9+tl470u1
+ _nv011nvvm@Base 470.103.01-0sci9+tl470u1
+ _nv012nvvm@Base 470.103.01-0sci9+tl470u1
+
