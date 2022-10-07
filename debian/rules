@@ -146,7 +146,7 @@ endif
 	ls -al
 	touch $@
 
-nvidia_icd.json.template	 = NVIDIA-Linux/nvidia_icd.json.template
+nvidia_icd.json.template         = NVIDIA-Linux/nvidia_icd.json
 $(nvidia_icd.json.template): unpack-stamp
 glvnd/nvidia_icd.json: $(nvidia_icd.json.template)
 	mkdir -p $(@D)
