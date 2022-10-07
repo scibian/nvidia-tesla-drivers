@@ -1,3 +1,20 @@
+nvidia-tesla-drivers (470.103.01-0sci9+tl470u1) scibian9+tl470; urgency=medium
+
+  [ Tàzio Gennuso ]
+  * Modifying gpb configuration
+
+  [ Kwame Amedodji ]
+  * Initial upstream/tl470 branch
+  * New upstream version 470.103.01
+  * Make symbols file compatible with a bunch lib
+  * Rollback a bunch of patch from previous release
+  * Fix fail build issue with unexistant library
+  * fix issue with non empty nv-readme.ids file
+  * fix issue with loop nvidia_icd.json.template
+  * add run installer split files
+
+ -- Kwame Amedodji <kwame-externe.amedodji@edf.fr>  Fri, 07 Oct 2022 08:30:18 +0200
+
 nvidia-tesla-drivers (418.56-0sci9+tl418u1) scibian9+tl418; urgency=medium
 
   * Rebuild package for scibian9+tl418
