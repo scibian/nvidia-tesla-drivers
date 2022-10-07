@@ -34,8 +34,7 @@ Pre-Depends:
  ${nvidia:legacy-check},
 Depends:
  nvidia-legacy-390xx-driver [${nvidia:arch:has-no-driver}],
- ${nvidia}-driver-libs (= ${binary:Version}) [${nvidia:arch:has-driver}]
- | ${nvidia}-driver-libs-nonglvnd (= ${binary:Version}) [${nvidia:arch:has-driver}],
+ ${nvidia}-driver-libs (= ${binary:Version}) [${nvidia:arch:has-driver}],
  ${nvidia}-driver-bin (= ${binary:Version}) [${nvidia:arch:has-driver}],
  xserver-xorg-video-${nvidia} (= ${binary:Version}) [${nvidia:arch:has-driver}],
  ${nvidia}-vdpau-driver (= ${binary:Version}) [${nvidia:arch:has-driver}],
@@ -273,39 +272,6 @@ Description: NVIDIA binary OpenGL/GLX library (GLVND variant)${nvidia:LegacyDesc
  .
  This metapackage depends on the NVIDIA binary OpenGL/GLX implementation using
  GLVND and the corresponding GLVND loader library.
-
-Package: libgl1-nvidia-glx
-Architecture: amd64
-Multi-Arch: same
-Pre-Depends:
- nvidia-installer-cleanup,
- ${nvidia:legacy-check},
- ${misc:Pre-Depends}
-Depends:
- ${nvidia}-alternative (= ${binary:Version}),
- lib${nvidia}-glcore (= ${binary:Version}),
- nvidia-support,
- ${shlibs:Depends}, ${misc:Depends}
-Recommends:
- ${nvidia}-driver-libs-nonglvnd (= ${binary:Version}),
- ${nvidia:kmod:binary},
-Suggests:
- ${nvidia:kmod:source},
-Provides:
- libgl1-nvidia-glx-any,
-Conflicts:
- libgl1-${nvidia}-glvnd-glx,
-Description: NVIDIA binary OpenGL/GLX library (non-GLVND variant)${nvidia:LegacyDesc}
- The NVIDIA binary driver provides optimized hardware acceleration of
- OpenGL/GLX/EGL/GLES applications via a direct-rendering X Server
- for graphics cards using NVIDIA chip sets.
- .
- See the description of the ${nvidia}-driver package
- or /usr/share/doc/libgl1-${nvidia}-glx/README.txt.gz
- for a complete list of supported GPUs and PCI IDs.
- .
- This package contains the driver specific binary OpenGL/GLX implementation
- provided by NVIDIA as a non-GLVND alternative.
 
 Package: libnvidia-glcore
 Architecture: amd64
@@ -855,7 +821,6 @@ Pre-Depends:
 Depends:
  nvidia-support,
  ${nvidia}-alternative (= ${binary:Version}),
- lib${nvidia}-fatbinaryloader (= ${binary:Version}),
  ${shlibs:Depends}, ${misc:Depends}
 Recommends:
  ${nvidia:kmod:binary},
@@ -923,25 +888,6 @@ Description: NVIDIA runtime compiler library${nvidia:LegacyDesc}
  general purpose computation.
  .
  This package contains the runtime compiler library.
-
-Package: libnvidia-fatbinaryloader
-Architecture: amd64
-Multi-Arch: same
-Pre-Depends:
- ${misc:Pre-Depends}
-Depends:
- lib${nvidia}-ptxjitcompiler1 (= ${binary:Version}),
- ${shlibs:Depends}, ${misc:Depends}
-Provides:
- libnvidia-fatbinaryloader-${nvidia:Version},
-Conflicts:
- libnvidia-fatbinaryloader-${nvidia:Version},
-Description: NVIDIA FAT binary loader${nvidia:LegacyDesc}
- The Compute Unified Device Architecture (CUDA) enables NVIDIA
- graphics processing units (GPUs) to be used for massively parallel
- general purpose computation.
- .
- This package contains the FAT multiarchitecture binary loader.
 
 Package: libnvidia-ptxjitcompiler1
 Architecture: amd64
